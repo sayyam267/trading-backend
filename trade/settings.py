@@ -61,7 +61,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "trade.urls"
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['snaked.pythonanywhere.com','www.snaked.pythonanywhere.com']
 if os.environ.get("ALLOWED_HOSTS"):
     ALLOWED_HOSTS.append(os.environ.get("ALLOWED_HOSTS", "*"))
 
@@ -155,6 +155,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://localhost:3000",
+    "https://trading-frontend-eight.vercel.app"
 ]
 if os.environ.get("CORS_ALLOWED_ORIGINS"):
     CORS_ALLOWED_ORIGINS.append(os.environ.get("CORS_ALLOWED_ORIGINS"))
