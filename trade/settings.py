@@ -61,7 +61,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "trade.urls"
-# ALLOWED_HOSTS = ['snaked.pythonanywhere.com','www.snaked.pythonanywhere.com']
+ALLOWED_HOSTS = ['snake.pythonanywhere.com','www.snake.pythonanywhere.com']
 if os.environ.get("ALLOWED_HOSTS"):
     ALLOWED_HOSTS.append(os.environ.get("ALLOWED_HOSTS", "*"))
 
