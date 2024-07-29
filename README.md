@@ -2,7 +2,7 @@
 
 ## API Endpoint
 
-https://djreactjwt-1-n3165612.deta.app/api/
+https://snake.pythonanywhere.com/
 
 ## API urls available
 
