@@ -1,7 +1,7 @@
 # credentials_manager/serializers.py
 
 from rest_framework import serializers
-from .models import Credential
+from .models import Credential,Order
 
 class CredentialCreateSerializer(serializers.ModelSerializer):
     class Meta:
@@ -13,3 +13,9 @@ class CredentialRetrieveSerializer(serializers.ModelSerializer):
     class Meta:
         model = Credential
         exclude = ['api_key', 'secret_key']
+
+
+class OrderSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Order
+        fields = '__all__'
